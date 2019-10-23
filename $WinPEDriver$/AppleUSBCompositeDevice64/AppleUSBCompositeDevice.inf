@@ -1,0 +1,35 @@
+; Installation INF for the Apple USB Composite Device
+;
+; Copyright © 2016 Apple Inc. All Rights Reserved.
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Usb
+ClassGuid={36FC9E60-C465-11CF-8056-444553540000}
+Provider=%Apple%
+CatalogFile=AppleUSBCompositeDevice.cat
+DriverVer=05/18/2016,6.1.6500.0
+
+[Manufacturer]
+%Apple%=UsbCCGPLoader,NTamd64
+
+;=============================================================================
+[UsbCCGPLoader.NTamd64]
+%AppleUsbCompositeDevice%=AppleUsbCCGPLoader, USB\VID_05AC&PID_8600
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[AppleUsbCCGPLoader.NT]
+Include=Usb.inf
+Needs=Composite.Dev.NT
+
+[AppleUsbCCGPLoader.NT.Services]
+Include=Usb.inf
+Needs=Composite.Dev.NT.Services
+
+[Strings]
+Apple			= "Apple Inc."
+AppleUsbCompositeDevice = "Apple USB Composite Device"
+SourceDisk		= "Apple USB Composite Device Installation"
