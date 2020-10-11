@@ -1,0 +1,142 @@
+; ************************************************************
+; ************************************************************
+; **  Filename: CedarForkSystem.inf                         **
+; **  Abstract: Assigns the null driver to devices          **
+; **            for yellow-bang removal and                 **
+; **            brands Intel(R) devices                     ** 
+; ************************************************************
+; ************************************************************
+
+[Version]
+Signature=$WINDOWS NT$
+Class=System
+ClassGUID={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%INTEL%
+CatalogFile=CedarFork.cat
+DriverVer=07/18/1968, 10.1.21.1
+
+[SourceDisksNames]
+
+[SourceDisksFiles]
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%INTEL%=INTEL,NTx86,NTamd64
+
+[INTEL.NTx86]
+%PCI\VEN_8086&DEV_18A2Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_18A2
+%PCI\VEN_8086&DEV_18A4Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_18A4
+%PCI\VEN_8086&DEV_18A5Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_18A5
+%PCI\VEN_8086&DEV_18A6Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_18A6
+%PCI\VEN_8086&DEV_18A7Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_18A7
+%PCI\VEN_8086&DEV_18A8Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_18A8
+%PCI\VEN_8086&DEV_18A9Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_18A9
+%PCI\VEN_8086&DEV_18AADesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_18AA
+%PCI\VEN_8086&DEV_18ABDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_18AB
+%PCI\VEN_8086&DEV_18ACDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_18AC
+%PCI\VEN_8086&DEV_18ADDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_18AD
+%PCI\VEN_8086&DEV_18AEDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_18AE
+%PCI\VEN_8086&DEV_18AFDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_18AF
+%PCI\VEN_8086&DEV_18DCDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_18DC
+%PCI\VEN_8086&DEV_18DDDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_18DD
+%PCI\VEN_8086&DEV_18DEDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_18DE
+%PCI\VEN_8086&DEV_18DFDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_18DF
+%PCI\VEN_8086&DEV_18E1Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_18E1
+
+[INTEL.NTamd64]
+%PCI\VEN_8086&DEV_18A2Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_18A2
+%PCI\VEN_8086&DEV_18A4Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_18A4
+%PCI\VEN_8086&DEV_18A5Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_18A5
+%PCI\VEN_8086&DEV_18A6Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_18A6
+%PCI\VEN_8086&DEV_18A7Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_18A7
+%PCI\VEN_8086&DEV_18A8Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_18A8
+%PCI\VEN_8086&DEV_18A9Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_18A9
+%PCI\VEN_8086&DEV_18AADesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_18AA
+%PCI\VEN_8086&DEV_18ABDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_18AB
+%PCI\VEN_8086&DEV_18ACDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_18AC
+%PCI\VEN_8086&DEV_18ADDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_18AD
+%PCI\VEN_8086&DEV_18AEDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_18AE
+%PCI\VEN_8086&DEV_18AFDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_18AF
+%PCI\VEN_8086&DEV_18DCDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_18DC
+%PCI\VEN_8086&DEV_18DDDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_18DD
+%PCI\VEN_8086&DEV_18DEDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_18DE
+%PCI\VEN_8086&DEV_18DFDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_18DF
+%PCI\VEN_8086&DEV_18E1Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_18E1
+
+[Needs_PCI_DRV]
+Include=machine.inf
+Needs=PCI_DRV
+
+[Needs_PCI_DRV.Services]
+Include=machine.inf
+Needs=PCI_DRV.Services
+
+[Needs_PCI_DRV.HW]
+Include=machine.inf
+Needs=PCI_DRV.HW
+
+[Needs_NO_DRV]
+Include=machine.inf
+Needs=NO_DRV
+
+[Needs_NO_DRV.Services]
+Include=machine.inf
+Needs=NO_DRV.Services
+
+[Needs_MSISADRV]
+Include=machine.inf
+Needs=MSISADRV
+
+[Needs_MSISADRV.Services]
+Include=machine.inf
+Needs=MSISADRV.Services
+
+[Strings]
+INTEL="INTEL"
+PCI\VEN_8086&DEV_18A2Desc="CDF PCIeRP[11] - 18A2"
+PCI\VEN_8086&DEV_18A4Desc="CDF PCIeRP[0] - 18A4"
+PCI\VEN_8086&DEV_18A5Desc="CDF PCIeRP[1] - 18A5"
+PCI\VEN_8086&DEV_18A6Desc="CDF PCIeRP[2] - 18A6"
+PCI\VEN_8086&DEV_18A7Desc="CDF PCIeRP[3] - 18A7"
+PCI\VEN_8086&DEV_18A8Desc="CDF PCIeRP[4] - 18A8"
+PCI\VEN_8086&DEV_18A9Desc="CDF PCIeRP[5] - 18A9"
+PCI\VEN_8086&DEV_18AADesc="CDF PCIeRP[6] - 18AA"
+PCI\VEN_8086&DEV_18ABDesc="CDF PCIeRP[7] - 18AB"
+PCI\VEN_8086&DEV_18ACDesc="CDF Generic SMBus - 18AC"
+PCI\VEN_8086&DEV_18ADDesc="CDF PCIeRP[8] - 18AD"
+PCI\VEN_8086&DEV_18AEDesc="CDF PCIeRP[9] - 18AE"
+PCI\VEN_8086&DEV_18AFDesc="CDF PCIeRP[10] - 18AF"
+PCI\VEN_8086&DEV_18DCDesc="CDF LPC/eSPI - 18DC"
+PCI\VEN_8086&DEV_18DDDesc="CDF P2SB - 18DD"
+PCI\VEN_8086&DEV_18DEDesc="CDF PMC - 18DE"
+PCI\VEN_8086&DEV_18DFDesc="CDF LegacySMBus - 18DF"
+PCI\VEN_8086&DEV_18E1Desc="CDF Northpeak - 18E1"
+
+
+
+
+; Copyright (c) 2003-2017 Intel Corporation
+; 
+; ********************************************************************************
+; Intel is making no claims of usability, efficacy or warranty.
+; ********************************************************************************
+; Information in this document is provided in connection with Intel products. No
+; license, express or implied, by estoppel or otherwise, to any intellectual
+; property rights is granted by this document. Intel assumes no liability
+; whatsoever, and Intel disclaims any express or implied warranty, relating to
+; sale and/or use of Intel products including liability or warranties relating to
+; fitness for a particular purpose, merchantability, or infringement of any
+; patent, copyright or other intellectual property right. Intel products are not
+; intended for use in medical, life saving, or life sustaining applications.
+; ********************************************************************************
+; Intel Corporation disclaims all warranties and liabilities for the use of this
+; document and the information contained herein, and assumes no responsibility for
+; any errors which may appear in this document, nor does Intel make a commitment
+; to update the information contained herein. Intel reserves the right to make
+; changes to this document at any time, without notice.
+; ********************************************************************************
+; ********************************************************************************
+; 
+; * Third-party brands and names are the property of their respective owners.

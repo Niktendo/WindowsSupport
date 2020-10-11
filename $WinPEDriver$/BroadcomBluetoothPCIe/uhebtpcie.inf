@@ -1,0 +1,131 @@
+;
+; bcmbt_pcie.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%ManufacturerName%
+CatalogFile = uhebtpcie.cat
+DriverVer = 12/09/2019,01.00.00.12
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+uhebtpcie.sys  = 1,,
+BCM4377B3_PCIE_Formosa_MFG_GEN_DEV.signed.blob.bin = 1,,
+BCM4377B3_PCIE_Formosa_MFG_GEN_DEV.signed.header.bin = 1,,
+BCM4377B3_PCIE_Formosa_MFG_GEN_PROD.signed.blob.bin = 1,,
+BCM4377B3_PCIE_Formosa_MFG_GEN_PROD.signed.header.bin = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64
+
+[Standard.NTamd64]
+%uhebtpcie.DeviceDesc%=bcmbt_pcie_Device_5FA0, PCI\VEN_14E4&DEV_5FA0; 
+
+[bcmbt_pcie_Device_5FA0.NT]
+CopyFiles=bcmbt_pcie_Device_5FA0.CopyFiles
+FeatureScore=F0
+
+[bcmbt_pcie_Device_5FA0.CopyFiles]
+uhebtpcie.sys
+BCM4377B3_PCIE_Formosa_MFG_GEN_DEV.signed.blob.bin
+BCM4377B3_PCIE_Formosa_MFG_GEN_DEV.signed.header.bin
+BCM4377B3_PCIE_Formosa_MFG_GEN_PROD.signed.blob.bin
+BCM4377B3_PCIE_Formosa_MFG_GEN_PROD.signed.header.bin
+
+
+[bcmbt_pcie_Device_5FA0.NT.HW]
+AddReg = bcmbt_pcie_Device_5FA0.NT.AddReg
+AddReg = Msi_support_5FA0.NT.addreg
+AddReg = Rings_config_parameters_5FA0.addreg
+AddReg = Exit_Quiesce_Mode_Timeout_parameters_5FA0.addreg
+
+[Msi_support_5FA0.NT.addreg]
+HKR,Interrupt Management,,0x00000010
+HKR,Interrupt Management\MessageSignaledInterruptProperties,,0x00000010
+HKR,Interrupt Management\MessageSignaledInterruptProperties,MSISupported,0x00010001,1
+HKR,Interrupt Management\MessageSignaledInterruptProperties,MessageNumberLimit,0x00010001,16
+
+[bcmbt_pcie_Device_5FA0.NT.AddReg]
+HKR,,"DevSignedBlob",0x00000, "BCM4377B3_PCIE_Formosa_MFG_GEN_DEV.signed.blob.bin"
+HKR,,"DevSignedHeader",0x00000, "BCM4377B3_PCIE_Formosa_MFG_GEN_DEV.signed.header.bin"
+HKR,,"ProdSignedBlob",0x00000, "BCM4377B3_PCIE_Formosa_MFG_GEN_PROD.signed.blob.bin"
+HKR,,"ProdSignedHeader",0x00000, "BCM4377B3_PCIE_Formosa_MFG_GEN_PROD.signed.header.bin"
+
+; Tr init config parameters as below
+;    2B              2B                 1B           1B       1B      2B       1B         2B           2B        1B           1B
+; TransmitRingId|CompleteRingId|NumbersOfIoOutput|LinkType|RingTag|Entries|FooterSize|DoorbellVector|MsiVector|virtual_tr|optimized_compl
+; 
+; Cr init config parameters
+;    1B        2B          2B        1B           2B            2B            2B             2B             4B
+; RingTag|CompleteRingId|Entries|footerSize|CompleteGroupId|DoorbellVector|MsiVector|MsiModerationDelay|MsiModerationBytes
+
+; Tring1 is for  HCI Command Transmission Ring
+; Tring2 is for  HCI Event Transmission Ring
+; Tring3 is for  ACL Tx Transmission Ring
+; Tring4 is for  ACL Rx Transmission Ring
+; Tring5 is for  debug Tx Ring
+; Tring6 is for  SCO Tx Transmission Ring
+; Tring7 is for  SCO Rx Transmission Ring
+
+; Cring1 is for  Completions for HCI Command and ACL Tx
+; Cring2 is for  Completions for HCI Event and ACL Rx
+; Cring3 is for  completions for SCO Tx
+; Cring4 is for  completions for SCO Rx
+; Cring5 is for  Completions for debug data Rx
+
+[Rings_config_parameters_5FA0.addreg]
+HKR,,"Tring1",0x00001, 01,00,01,00,00,01,23,20,00,42,01,00,ff,ff,00,00
+HKR,,"Tring2",0x00001, 02,00,02,00,20,00,24,20,00,00,02,00,ff,ff,01,00
+HKR,,"Tring3",0x00001, 05,00,01,00,00,01,25,40,00,00,03,00,ff,ff,00,00
+HKR,,"Tring4",0x00001, 06,00,02,00,20,00,26,20,00,00,04,00,ff,ff,00,00 
+HKR,,"Tring5",0x00001, 08,00,05,00,20,00,27,20,00,00,05,00,ff,ff,00,00 
+;HKR,,"Tring6",0x00001, 03,00,03,00,00,01,21,40,00,00,06,00,ff,ff,00,00 
+;HKR,,"Tring7",0x00001, 04,00,04,00,20,00,22,40,00,00,06,00,ff,ff,00,00 
+HKR,,"Tring6",0x00001, 03,00,03,00,00,01,21,00,01,42,06,00,ff,ff,00,00 
+HKR,,"Tring7",0x00001, 04,00,04,00,40,00,22,00,01,00,06,00,ff,ff,01,00 
+HKR,,"Cring1",0x00001, ff,01,00,00,01,42,ff,ff,ff,ff,00,00,00,00,00,00,00,00
+HKR,,"Cring2",0x00001, ff,02,00,00,01,42,ff,ff,ff,ff,00,00,00,00,00,00,00,00
+HKR,,"Cring3",0x00001, ff,03,00,00,01,42,ff,ff,ff,ff,00,00,00,00,00,00,00,00
+HKR,,"Cring4",0x00001, ff,04,00,00,01,42,ff,ff,ff,ff,00,00,a6,0e,3c,00,00,00
+;HKR,,"Cring4",0x00001, ff,04,00,40,00,42,ff,ff,ff,ff,00,00,00,00,00,00,00,00
+HKR,,"Cring5",0x00001, ff,05,00,00,01,00,ff,ff,ff,ff,00,00,00,00,00,00,00,00
+
+[Exit_Quiesce_Mode_Timeout_parameters_5FA0.addreg]
+HKR,,"timeout",0x00001, c8,00                         ;;timeout is set as 200ms by default
+
+
+
+;-------------- Service installation
+[bcmbt_pcie_Device_5FA0.NT.Services]
+AddService = uhebtpcie,%SPSVCINST_ASSOCSERVICE%, bcmbt_pcie_Service_Inst
+
+; -------------- bcmbt_pcie driver install sections
+[bcmbt_pcie_Service_Inst]
+DisplayName    = %uhebtpcie.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\uhebtpcie.sys
+
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="Broadcom" ;TODO: Replace with your manufacturer name
+ClassName="Broadcom Bluetooth controller Over Uhe PCIe" ; TODO: edit ClassName
+DiskName = "Broadcom Bluetooth controller Over Uhe PCIe Installation Disk"
+uhebtpcie.DeviceDesc = "Broadcom Bluetooth controller Over Uhe PCIe Device"
+uhebtpcie.SVCDESC = "Broadcom Bluetooth controller Over Uhe PCIe Service"
+
+

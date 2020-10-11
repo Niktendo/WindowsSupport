@@ -1,23 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!--Created With CreateMup.exe Version 25.11.2014.0925-->
+<!--Created With CreateMup.exe Version 08.05.2015.1550-->
 <MUPDefinition xmlns="http://schemas.dell.com/openmanage/cm/2/0/mupdefinition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.dell.com/openmanage/cm/2/0/mupdefinition.xsd mupdefinition.xsd">
   <packageinformation>
     <installertype>msi</installertype>
     <packagegrouping>single_package</packagegrouping>
     <packagingtype>zip</packagingtype>
     <releasetype>DRVR</releasetype>
-    <mupspecificationversion>2.4.3</mupspecificationversion>
-    <version>11.0.0.1153</version>
+    <mupspecificationversion>2.4.5</mupspecificationversion>
+    <version>1926.13.0.1085</version>
     <name>Intel(R) Management Engine Firmware</name>
     <supportedoperatingsystems>
-      <osidentifier name="XP" architecture="x64" />
-      <osidentifier name="XP" architecture="x86" />
-      <osidentifier name="W2K3" architecture="x64" />
-      <osidentifier name="W2K3" architecture="x86" />
-      <osidentifier name="Vista" architecture="x64" />
-      <osidentifier name="Vista" architecture="x86" />
-      <osidentifier name="W2K8" architecture="x64" />
-      <osidentifier name="W2K8" architecture="x86" />
       <osidentifier name="Windows7" architecture="x64" />
       <osidentifier name="Windows7" architecture="x86" />
       <osidentifier name="W2K8R2" architecture="x64" />
@@ -29,466 +21,275 @@
       <osidentifier name="W2K12R2" architecture="x64" />
       <osidentifier name="Windows10" architecture="x64" />
       <osidentifier name="Windows10" architecture="x86" />
+      <osidentifier name="W2K16" architecture="x64" />
     </supportedoperatingsystems>
     <content>
-      <Device componentID="103308">
-        <PCIInfo vendorID="8086" deviceID="1E3A" />
-        <PCIInfo vendorID="8086" deviceID="1CBA" />
-        <PCIInfo vendorID="8086" deviceID="1C3A" />
-        <PCIInfo vendorID="8086" deviceID="1DBA" />
-        <PCIInfo vendorID="8086" deviceID="1D3A" />
-        <PCIInfo vendorID="8086" deviceID="8C3A" />
-        <PCIInfo vendorID="8086" deviceID="9C3A" />
-        <PCIInfo vendorID="8086" deviceID="8D3A" />
-        <PCIInfo vendorID="8086" deviceID="9CBA" />
-        <PCIInfo vendorID="8086" deviceID="8CBA" />
+      <Device componentID="100950">
         <PCIInfo vendorID="8086" deviceID="9D3A" />
         <PCIInfo vendorID="8086" deviceID="A13A" />
-        <Image type="DRVR" version="11.0.0.1146">
-          <file>production\XP-x64\heci.inf</file>
-          <file>production\XP-x64\HECI.cat</file>
-          <file>production\XP-x64\TeeDriver.sys</file>
-          <file>production\XP-x64\TeeDriverW8.sys</file>
-          <file>production\XP-x64\HECI.sys</file>
-          <file>production\XP-x64\TeeDriverx64.sys</file>
-          <file>production\XP-x64\TeeDriverW8x64.sys</file>
-          <file>production\XP-x64\HECIx64.sys</file>
+        <PCIInfo vendorID="8086" deviceID="A2BA" />
+        <PCIInfo vendorID="8086" deviceID="A1BA" />
+        <PCIInfo vendorID="8086" deviceID="A23A" />
+        <PCIInfo vendorID="8086" deviceID="9DE0" />
+        <PCIInfo vendorID="8086" deviceID="A360" />
+        <PCIInfo vendorID="8086" deviceID="A1BD" />
+        <Image type="DRVR" version="1910.13.0.1060">
+          <file>production\Windows7-x64\heci.inf\heci.inf</file>
+          <file>production\Windows7-x64\heci.inf\HECI.cat</file>
+          <file>production\Windows7-x64\heci.inf\TeeDriver.sys</file>
+          <file>production\Windows7-x64\heci.inf\TeeDriverx64.sys</file>
         </Image>
       </Device>
-      <Device componentID="103308">
-        <PCIInfo vendorID="8086" deviceID="1E3A" />
-        <PCIInfo vendorID="8086" deviceID="1CBA" />
-        <PCIInfo vendorID="8086" deviceID="1C3A" />
-        <PCIInfo vendorID="8086" deviceID="1DBA" />
-        <PCIInfo vendorID="8086" deviceID="1D3A" />
-        <PCIInfo vendorID="8086" deviceID="8C3A" />
-        <PCIInfo vendorID="8086" deviceID="9C3A" />
-        <PCIInfo vendorID="8086" deviceID="8D3A" />
-        <PCIInfo vendorID="8086" deviceID="9CBA" />
-        <PCIInfo vendorID="8086" deviceID="8CBA" />
+      <Device componentID="100950">
         <PCIInfo vendorID="8086" deviceID="9D3A" />
         <PCIInfo vendorID="8086" deviceID="A13A" />
-        <Image type="DRVR" version="11.0.0.1146">
-          <file>production\XP-x86\heci.inf</file>
-          <file>production\XP-x86\HECI.cat</file>
-          <file>production\XP-x86\TeeDriver.sys</file>
-          <file>production\XP-x86\TeeDriverW8.sys</file>
-          <file>production\XP-x86\HECI.sys</file>
-          <file>production\XP-x86\TeeDriverx64.sys</file>
-          <file>production\XP-x86\TeeDriverW8x64.sys</file>
-          <file>production\XP-x86\HECIx64.sys</file>
+        <PCIInfo vendorID="8086" deviceID="A2BA" />
+        <PCIInfo vendorID="8086" deviceID="A1BA" />
+        <PCIInfo vendorID="8086" deviceID="A23A" />
+        <PCIInfo vendorID="8086" deviceID="9DE0" />
+        <PCIInfo vendorID="8086" deviceID="A360" />
+        <PCIInfo vendorID="8086" deviceID="A1BD" />
+        <Image type="DRVR" version="1910.13.0.1060">
+          <file>production\Windows7-x86\heci.inf\heci.inf</file>
+          <file>production\Windows7-x86\heci.inf\HECI.cat</file>
+          <file>production\Windows7-x86\heci.inf\TeeDriver.sys</file>
+          <file>production\Windows7-x86\heci.inf\TeeDriverx64.sys</file>
         </Image>
       </Device>
-      <Device componentID="103308">
-        <PCIInfo vendorID="8086" deviceID="1E3A" />
-        <PCIInfo vendorID="8086" deviceID="1CBA" />
-        <PCIInfo vendorID="8086" deviceID="1C3A" />
-        <PCIInfo vendorID="8086" deviceID="1DBA" />
-        <PCIInfo vendorID="8086" deviceID="1D3A" />
-        <PCIInfo vendorID="8086" deviceID="8C3A" />
-        <PCIInfo vendorID="8086" deviceID="9C3A" />
-        <PCIInfo vendorID="8086" deviceID="8D3A" />
-        <PCIInfo vendorID="8086" deviceID="9CBA" />
-        <PCIInfo vendorID="8086" deviceID="8CBA" />
+      <Device componentID="100950">
         <PCIInfo vendorID="8086" deviceID="9D3A" />
         <PCIInfo vendorID="8086" deviceID="A13A" />
-        <Image type="DRVR" version="11.0.0.1146">
-          <file>production\W2K3-x64\heci.inf</file>
-          <file>production\W2K3-x64\HECI.cat</file>
-          <file>production\W2K3-x64\TeeDriver.sys</file>
-          <file>production\W2K3-x64\TeeDriverW8.sys</file>
-          <file>production\W2K3-x64\HECI.sys</file>
-          <file>production\W2K3-x64\TeeDriverx64.sys</file>
-          <file>production\W2K3-x64\TeeDriverW8x64.sys</file>
-          <file>production\W2K3-x64\HECIx64.sys</file>
+        <PCIInfo vendorID="8086" deviceID="A2BA" />
+        <PCIInfo vendorID="8086" deviceID="A1BA" />
+        <PCIInfo vendorID="8086" deviceID="A23A" />
+        <PCIInfo vendorID="8086" deviceID="9DE0" />
+        <PCIInfo vendorID="8086" deviceID="A360" />
+        <PCIInfo vendorID="8086" deviceID="A1BD" />
+        <Image type="DRVR" version="1910.13.0.1060">
+          <file>production\W2K8R2-x64\heci.inf\heci.inf</file>
+          <file>production\W2K8R2-x64\heci.inf\HECI.cat</file>
+          <file>production\W2K8R2-x64\heci.inf\TeeDriver.sys</file>
+          <file>production\W2K8R2-x64\heci.inf\TeeDriverx64.sys</file>
         </Image>
       </Device>
-      <Device componentID="103308">
-        <PCIInfo vendorID="8086" deviceID="1E3A" />
-        <PCIInfo vendorID="8086" deviceID="1CBA" />
-        <PCIInfo vendorID="8086" deviceID="1C3A" />
-        <PCIInfo vendorID="8086" deviceID="1DBA" />
-        <PCIInfo vendorID="8086" deviceID="1D3A" />
-        <PCIInfo vendorID="8086" deviceID="8C3A" />
-        <PCIInfo vendorID="8086" deviceID="9C3A" />
-        <PCIInfo vendorID="8086" deviceID="8D3A" />
-        <PCIInfo vendorID="8086" deviceID="9CBA" />
-        <PCIInfo vendorID="8086" deviceID="8CBA" />
+      <Device componentID="100950">
         <PCIInfo vendorID="8086" deviceID="9D3A" />
         <PCIInfo vendorID="8086" deviceID="A13A" />
-        <Image type="DRVR" version="11.0.0.1146">
-          <file>production\W2K3-x86\heci.inf</file>
-          <file>production\W2K3-x86\HECI.cat</file>
-          <file>production\W2K3-x86\TeeDriver.sys</file>
-          <file>production\W2K3-x86\TeeDriverW8.sys</file>
-          <file>production\W2K3-x86\HECI.sys</file>
-          <file>production\W2K3-x86\TeeDriverx64.sys</file>
-          <file>production\W2K3-x86\TeeDriverW8x64.sys</file>
-          <file>production\W2K3-x86\HECIx64.sys</file>
+        <PCIInfo vendorID="8086" deviceID="A2BA" />
+        <PCIInfo vendorID="8086" deviceID="9DE0" />
+        <PCIInfo vendorID="8086" deviceID="A360" />
+        <PCIInfo vendorID="8086" deviceID="34E0" />
+        <PCIInfo vendorID="8086" deviceID="38E0" />
+        <PCIInfo vendorID="8086" deviceID="A1BA" />
+        <PCIInfo vendorID="8086" deviceID="A23A" />
+        <PCIInfo vendorID="8086" deviceID="18D3" />
+        <Image type="DRVR" version="1910.13.0.1060">
+          <file>production\Windows8-x64\heci.inf\heci.inf</file>
+          <file>production\Windows8-x64\heci.inf\HECI.cat</file>
+          <file>production\Windows8-x64\heci.inf\TeeDriverW8.sys</file>
+          <file>production\Windows8-x64\heci.inf\TeeDriverW8x64.sys</file>
         </Image>
       </Device>
-      <Device componentID="103308">
-        <PCIInfo vendorID="8086" deviceID="1E3A" />
-        <PCIInfo vendorID="8086" deviceID="1CBA" />
-        <PCIInfo vendorID="8086" deviceID="1C3A" />
-        <PCIInfo vendorID="8086" deviceID="1DBA" />
-        <PCIInfo vendorID="8086" deviceID="1D3A" />
-        <PCIInfo vendorID="8086" deviceID="8C3A" />
-        <PCIInfo vendorID="8086" deviceID="9C3A" />
-        <PCIInfo vendorID="8086" deviceID="8D3A" />
-        <PCIInfo vendorID="8086" deviceID="9CBA" />
-        <PCIInfo vendorID="8086" deviceID="8CBA" />
+      <Device componentID="100950">
         <PCIInfo vendorID="8086" deviceID="9D3A" />
         <PCIInfo vendorID="8086" deviceID="A13A" />
-        <Image type="DRVR" version="11.0.0.1146">
-          <file>production\Vista-x64\heci.inf</file>
-          <file>production\Vista-x64\HECI.cat</file>
-          <file>production\Vista-x64\TeeDriver.sys</file>
-          <file>production\Vista-x64\TeeDriverW8.sys</file>
-          <file>production\Vista-x64\HECI.sys</file>
-          <file>production\Vista-x64\TeeDriverx64.sys</file>
-          <file>production\Vista-x64\TeeDriverW8x64.sys</file>
-          <file>production\Vista-x64\HECIx64.sys</file>
+        <PCIInfo vendorID="8086" deviceID="A2BA" />
+        <PCIInfo vendorID="8086" deviceID="9DE0" />
+        <PCIInfo vendorID="8086" deviceID="A360" />
+        <PCIInfo vendorID="8086" deviceID="34E0" />
+        <PCIInfo vendorID="8086" deviceID="38E0" />
+        <PCIInfo vendorID="8086" deviceID="A1BA" />
+        <PCIInfo vendorID="8086" deviceID="A23A" />
+        <PCIInfo vendorID="8086" deviceID="18D3" />
+        <Image type="DRVR" version="1910.13.0.1060">
+          <file>production\Windows8-x86\heci.inf\heci.inf</file>
+          <file>production\Windows8-x86\heci.inf\HECI.cat</file>
+          <file>production\Windows8-x86\heci.inf\TeeDriverW8.sys</file>
+          <file>production\Windows8-x86\heci.inf\TeeDriverW8x64.sys</file>
         </Image>
       </Device>
-      <Device componentID="103308">
-        <PCIInfo vendorID="8086" deviceID="1E3A" />
-        <PCIInfo vendorID="8086" deviceID="1CBA" />
-        <PCIInfo vendorID="8086" deviceID="1C3A" />
-        <PCIInfo vendorID="8086" deviceID="1DBA" />
-        <PCIInfo vendorID="8086" deviceID="1D3A" />
-        <PCIInfo vendorID="8086" deviceID="8C3A" />
-        <PCIInfo vendorID="8086" deviceID="9C3A" />
-        <PCIInfo vendorID="8086" deviceID="8D3A" />
-        <PCIInfo vendorID="8086" deviceID="9CBA" />
-        <PCIInfo vendorID="8086" deviceID="8CBA" />
+      <Device componentID="100950">
         <PCIInfo vendorID="8086" deviceID="9D3A" />
         <PCIInfo vendorID="8086" deviceID="A13A" />
-        <Image type="DRVR" version="11.0.0.1146">
-          <file>production\Vista-x86\heci.inf</file>
-          <file>production\Vista-x86\HECI.cat</file>
-          <file>production\Vista-x86\TeeDriver.sys</file>
-          <file>production\Vista-x86\TeeDriverW8.sys</file>
-          <file>production\Vista-x86\HECI.sys</file>
-          <file>production\Vista-x86\TeeDriverx64.sys</file>
-          <file>production\Vista-x86\TeeDriverW8x64.sys</file>
-          <file>production\Vista-x86\HECIx64.sys</file>
+        <PCIInfo vendorID="8086" deviceID="A2BA" />
+        <PCIInfo vendorID="8086" deviceID="9DE0" />
+        <PCIInfo vendorID="8086" deviceID="A360" />
+        <PCIInfo vendorID="8086" deviceID="34E0" />
+        <PCIInfo vendorID="8086" deviceID="38E0" />
+        <PCIInfo vendorID="8086" deviceID="A1BA" />
+        <PCIInfo vendorID="8086" deviceID="A23A" />
+        <PCIInfo vendorID="8086" deviceID="18D3" />
+        <Image type="DRVR" version="1910.13.0.1060">
+          <file>production\W2K12-x64\heci.inf\heci.inf</file>
+          <file>production\W2K12-x64\heci.inf\HECI.cat</file>
+          <file>production\W2K12-x64\heci.inf\TeeDriverW8.sys</file>
+          <file>production\W2K12-x64\heci.inf\TeeDriverW8x64.sys</file>
         </Image>
       </Device>
-      <Device componentID="103308">
-        <PCIInfo vendorID="8086" deviceID="1E3A" />
-        <PCIInfo vendorID="8086" deviceID="1CBA" />
-        <PCIInfo vendorID="8086" deviceID="1C3A" />
-        <PCIInfo vendorID="8086" deviceID="1DBA" />
-        <PCIInfo vendorID="8086" deviceID="1D3A" />
-        <PCIInfo vendorID="8086" deviceID="8C3A" />
-        <PCIInfo vendorID="8086" deviceID="9C3A" />
-        <PCIInfo vendorID="8086" deviceID="8D3A" />
-        <PCIInfo vendorID="8086" deviceID="9CBA" />
-        <PCIInfo vendorID="8086" deviceID="8CBA" />
+      <Device componentID="100950">
         <PCIInfo vendorID="8086" deviceID="9D3A" />
         <PCIInfo vendorID="8086" deviceID="A13A" />
-        <Image type="DRVR" version="11.0.0.1146">
-          <file>production\W2K8-x64\heci.inf</file>
-          <file>production\W2K8-x64\HECI.cat</file>
-          <file>production\W2K8-x64\TeeDriver.sys</file>
-          <file>production\W2K8-x64\TeeDriverW8.sys</file>
-          <file>production\W2K8-x64\HECI.sys</file>
-          <file>production\W2K8-x64\TeeDriverx64.sys</file>
-          <file>production\W2K8-x64\TeeDriverW8x64.sys</file>
-          <file>production\W2K8-x64\HECIx64.sys</file>
+        <PCIInfo vendorID="8086" deviceID="A2BA" />
+        <PCIInfo vendorID="8086" deviceID="9DE0" />
+        <PCIInfo vendorID="8086" deviceID="A360" />
+        <PCIInfo vendorID="8086" deviceID="34E0" />
+        <PCIInfo vendorID="8086" deviceID="38E0" />
+        <PCIInfo vendorID="8086" deviceID="A1BA" />
+        <PCIInfo vendorID="8086" deviceID="A23A" />
+        <PCIInfo vendorID="8086" deviceID="18D3" />
+        <Image type="DRVR" version="1910.13.0.1060">
+          <file>production\Windows8.1-x64\heci.inf\heci.inf</file>
+          <file>production\Windows8.1-x64\heci.inf\HECI.cat</file>
+          <file>production\Windows8.1-x64\heci.inf\TeeDriverW8.sys</file>
+          <file>production\Windows8.1-x64\heci.inf\TeeDriverW8x64.sys</file>
         </Image>
       </Device>
-      <Device componentID="103308">
-        <PCIInfo vendorID="8086" deviceID="1E3A" />
-        <PCIInfo vendorID="8086" deviceID="1CBA" />
-        <PCIInfo vendorID="8086" deviceID="1C3A" />
-        <PCIInfo vendorID="8086" deviceID="1DBA" />
-        <PCIInfo vendorID="8086" deviceID="1D3A" />
-        <PCIInfo vendorID="8086" deviceID="8C3A" />
-        <PCIInfo vendorID="8086" deviceID="9C3A" />
-        <PCIInfo vendorID="8086" deviceID="8D3A" />
-        <PCIInfo vendorID="8086" deviceID="9CBA" />
-        <PCIInfo vendorID="8086" deviceID="8CBA" />
+      <Device componentID="100950">
         <PCIInfo vendorID="8086" deviceID="9D3A" />
         <PCIInfo vendorID="8086" deviceID="A13A" />
-        <Image type="DRVR" version="11.0.0.1146">
-          <file>production\W2K8-x86\heci.inf</file>
-          <file>production\W2K8-x86\HECI.cat</file>
-          <file>production\W2K8-x86\TeeDriver.sys</file>
-          <file>production\W2K8-x86\TeeDriverW8.sys</file>
-          <file>production\W2K8-x86\HECI.sys</file>
-          <file>production\W2K8-x86\TeeDriverx64.sys</file>
-          <file>production\W2K8-x86\TeeDriverW8x64.sys</file>
-          <file>production\W2K8-x86\HECIx64.sys</file>
+        <PCIInfo vendorID="8086" deviceID="A2BA" />
+        <PCIInfo vendorID="8086" deviceID="9DE0" />
+        <PCIInfo vendorID="8086" deviceID="A360" />
+        <PCIInfo vendorID="8086" deviceID="34E0" />
+        <PCIInfo vendorID="8086" deviceID="38E0" />
+        <PCIInfo vendorID="8086" deviceID="A1BA" />
+        <PCIInfo vendorID="8086" deviceID="A23A" />
+        <PCIInfo vendorID="8086" deviceID="18D3" />
+        <Image type="DRVR" version="1910.13.0.1060">
+          <file>production\Windows8.1-x86\heci.inf\heci.inf</file>
+          <file>production\Windows8.1-x86\heci.inf\HECI.cat</file>
+          <file>production\Windows8.1-x86\heci.inf\TeeDriverW8.sys</file>
+          <file>production\Windows8.1-x86\heci.inf\TeeDriverW8x64.sys</file>
         </Image>
       </Device>
-      <Device componentID="103308">
-        <PCIInfo vendorID="8086" deviceID="1E3A" />
-        <PCIInfo vendorID="8086" deviceID="1CBA" />
-        <PCIInfo vendorID="8086" deviceID="1C3A" />
-        <PCIInfo vendorID="8086" deviceID="1DBA" />
-        <PCIInfo vendorID="8086" deviceID="1D3A" />
-        <PCIInfo vendorID="8086" deviceID="8C3A" />
-        <PCIInfo vendorID="8086" deviceID="9C3A" />
-        <PCIInfo vendorID="8086" deviceID="8D3A" />
-        <PCIInfo vendorID="8086" deviceID="9CBA" />
-        <PCIInfo vendorID="8086" deviceID="8CBA" />
+      <Device componentID="100950">
         <PCIInfo vendorID="8086" deviceID="9D3A" />
         <PCIInfo vendorID="8086" deviceID="A13A" />
-        <Image type="DRVR" version="11.0.0.1146">
-          <file>production\Windows7-x64\heci.inf</file>
-          <file>production\Windows7-x64\HECI.cat</file>
-          <file>production\Windows7-x64\TeeDriver.sys</file>
-          <file>production\Windows7-x64\TeeDriverW8.sys</file>
-          <file>production\Windows7-x64\HECI.sys</file>
-          <file>production\Windows7-x64\TeeDriverx64.sys</file>
-          <file>production\Windows7-x64\TeeDriverW8x64.sys</file>
-          <file>production\Windows7-x64\HECIx64.sys</file>
+        <PCIInfo vendorID="8086" deviceID="A2BA" />
+        <PCIInfo vendorID="8086" deviceID="9DE0" />
+        <PCIInfo vendorID="8086" deviceID="A360" />
+        <PCIInfo vendorID="8086" deviceID="34E0" />
+        <PCIInfo vendorID="8086" deviceID="38E0" />
+        <PCIInfo vendorID="8086" deviceID="A1BA" />
+        <PCIInfo vendorID="8086" deviceID="A23A" />
+        <PCIInfo vendorID="8086" deviceID="18D3" />
+        <Image type="DRVR" version="1910.13.0.1060">
+          <file>production\W2K12R2-x64\heci.inf\heci.inf</file>
+          <file>production\W2K12R2-x64\heci.inf\HECI.cat</file>
+          <file>production\W2K12R2-x64\heci.inf\TeeDriverW8.sys</file>
+          <file>production\W2K12R2-x64\heci.inf\TeeDriverW8x64.sys</file>
         </Image>
       </Device>
-      <Device componentID="103308">
-        <PCIInfo vendorID="8086" deviceID="1E3A" />
-        <PCIInfo vendorID="8086" deviceID="1CBA" />
-        <PCIInfo vendorID="8086" deviceID="1C3A" />
-        <PCIInfo vendorID="8086" deviceID="1DBA" />
-        <PCIInfo vendorID="8086" deviceID="1D3A" />
-        <PCIInfo vendorID="8086" deviceID="8C3A" />
-        <PCIInfo vendorID="8086" deviceID="9C3A" />
-        <PCIInfo vendorID="8086" deviceID="8D3A" />
-        <PCIInfo vendorID="8086" deviceID="9CBA" />
-        <PCIInfo vendorID="8086" deviceID="8CBA" />
+      <Device componentID="100950">
         <PCIInfo vendorID="8086" deviceID="9D3A" />
         <PCIInfo vendorID="8086" deviceID="A13A" />
-        <Image type="DRVR" version="11.0.0.1146">
-          <file>production\Windows7-x86\heci.inf</file>
-          <file>production\Windows7-x86\HECI.cat</file>
-          <file>production\Windows7-x86\TeeDriver.sys</file>
-          <file>production\Windows7-x86\TeeDriverW8.sys</file>
-          <file>production\Windows7-x86\HECI.sys</file>
-          <file>production\Windows7-x86\TeeDriverx64.sys</file>
-          <file>production\Windows7-x86\TeeDriverW8x64.sys</file>
-          <file>production\Windows7-x86\HECIx64.sys</file>
+        <PCIInfo vendorID="8086" deviceID="A2BA" />
+        <PCIInfo vendorID="8086" deviceID="9DE0" />
+        <PCIInfo vendorID="8086" deviceID="A360" />
+        <PCIInfo vendorID="8086" deviceID="34E0" />
+        <PCIInfo vendorID="8086" deviceID="38E0" />
+        <PCIInfo vendorID="8086" deviceID="A1BA" />
+        <PCIInfo vendorID="8086" deviceID="A23A" />
+        <PCIInfo vendorID="8086" deviceID="18D3" />
+        <Image type="DRVR" version="1910.13.0.1060">
+          <file>production\Windows10-x64\heci.inf\heci.inf</file>
+          <file>production\Windows10-x64\heci.inf\HECI.cat</file>
+          <file>production\Windows10-x64\heci.inf\TeeDriverW8.sys</file>
+          <file>production\Windows10-x64\heci.inf\TeeDriverW8x64.sys</file>
         </Image>
       </Device>
-      <Device componentID="103308">
-        <PCIInfo vendorID="8086" deviceID="1E3A" />
-        <PCIInfo vendorID="8086" deviceID="1CBA" />
-        <PCIInfo vendorID="8086" deviceID="1C3A" />
-        <PCIInfo vendorID="8086" deviceID="1DBA" />
-        <PCIInfo vendorID="8086" deviceID="1D3A" />
-        <PCIInfo vendorID="8086" deviceID="8C3A" />
-        <PCIInfo vendorID="8086" deviceID="9C3A" />
-        <PCIInfo vendorID="8086" deviceID="8D3A" />
-        <PCIInfo vendorID="8086" deviceID="9CBA" />
-        <PCIInfo vendorID="8086" deviceID="8CBA" />
+      <Device componentID="100950">
         <PCIInfo vendorID="8086" deviceID="9D3A" />
         <PCIInfo vendorID="8086" deviceID="A13A" />
-        <Image type="DRVR" version="11.0.0.1146">
-          <file>production\W2K8R2-x64\heci.inf</file>
-          <file>production\W2K8R2-x64\HECI.cat</file>
-          <file>production\W2K8R2-x64\TeeDriver.sys</file>
-          <file>production\W2K8R2-x64\TeeDriverW8.sys</file>
-          <file>production\W2K8R2-x64\HECI.sys</file>
-          <file>production\W2K8R2-x64\TeeDriverx64.sys</file>
-          <file>production\W2K8R2-x64\TeeDriverW8x64.sys</file>
-          <file>production\W2K8R2-x64\HECIx64.sys</file>
+        <PCIInfo vendorID="8086" deviceID="A2BA" />
+        <PCIInfo vendorID="8086" deviceID="9DE0" />
+        <PCIInfo vendorID="8086" deviceID="A360" />
+        <PCIInfo vendorID="8086" deviceID="34E0" />
+        <PCIInfo vendorID="8086" deviceID="38E0" />
+        <PCIInfo vendorID="8086" deviceID="A1BA" />
+        <PCIInfo vendorID="8086" deviceID="A23A" />
+        <PCIInfo vendorID="8086" deviceID="18D3" />
+        <Image type="DRVR" version="1910.13.0.1060">
+          <file>production\Windows10-x86\heci.inf\heci.inf</file>
+          <file>production\Windows10-x86\heci.inf\HECI.cat</file>
+          <file>production\Windows10-x86\heci.inf\TeeDriverW8.sys</file>
+          <file>production\Windows10-x86\heci.inf\TeeDriverW8x64.sys</file>
         </Image>
       </Device>
-      <Device componentID="103308">
-        <PCIInfo vendorID="8086" deviceID="1E3A" />
-        <PCIInfo vendorID="8086" deviceID="1CBA" />
-        <PCIInfo vendorID="8086" deviceID="1C3A" />
-        <PCIInfo vendorID="8086" deviceID="1DBA" />
-        <PCIInfo vendorID="8086" deviceID="1D3A" />
-        <PCIInfo vendorID="8086" deviceID="8C3A" />
-        <PCIInfo vendorID="8086" deviceID="9C3A" />
-        <PCIInfo vendorID="8086" deviceID="8D3A" />
-        <PCIInfo vendorID="8086" deviceID="9CBA" />
-        <PCIInfo vendorID="8086" deviceID="8CBA" />
+      <Device componentID="100950">
         <PCIInfo vendorID="8086" deviceID="9D3A" />
         <PCIInfo vendorID="8086" deviceID="A13A" />
-        <Image type="DRVR" version="11.0.0.1146">
-          <file>production\Windows8-x64\heci.inf</file>
-          <file>production\Windows8-x64\HECI.cat</file>
-          <file>production\Windows8-x64\TeeDriver.sys</file>
-          <file>production\Windows8-x64\TeeDriverW8.sys</file>
-          <file>production\Windows8-x64\HECI.sys</file>
-          <file>production\Windows8-x64\TeeDriverx64.sys</file>
-          <file>production\Windows8-x64\TeeDriverW8x64.sys</file>
-          <file>production\Windows8-x64\HECIx64.sys</file>
+        <PCIInfo vendorID="8086" deviceID="A2BA" />
+        <PCIInfo vendorID="8086" deviceID="9DE0" />
+        <PCIInfo vendorID="8086" deviceID="A360" />
+        <PCIInfo vendorID="8086" deviceID="34E0" />
+        <PCIInfo vendorID="8086" deviceID="38E0" />
+        <PCIInfo vendorID="8086" deviceID="A1BA" />
+        <PCIInfo vendorID="8086" deviceID="A23A" />
+        <PCIInfo vendorID="8086" deviceID="18D3" />
+        <Image type="DRVR" version="1910.13.0.1060">
+          <file>production\W2K16-x64\heci.inf\heci.inf</file>
+          <file>production\W2K16-x64\heci.inf\HECI.cat</file>
+          <file>production\W2K16-x64\heci.inf\TeeDriverW8.sys</file>
+          <file>production\W2K16-x64\heci.inf\TeeDriverW8x64.sys</file>
         </Image>
       </Device>
-      <Device componentID="103308">
-        <PCIInfo vendorID="8086" deviceID="1E3A" />
-        <PCIInfo vendorID="8086" deviceID="1CBA" />
-        <PCIInfo vendorID="8086" deviceID="1C3A" />
-        <PCIInfo vendorID="8086" deviceID="1DBA" />
-        <PCIInfo vendorID="8086" deviceID="1D3A" />
-        <PCIInfo vendorID="8086" deviceID="8C3A" />
-        <PCIInfo vendorID="8086" deviceID="9C3A" />
-        <PCIInfo vendorID="8086" deviceID="8D3A" />
-        <PCIInfo vendorID="8086" deviceID="9CBA" />
-        <PCIInfo vendorID="8086" deviceID="8CBA" />
+      <Device componentID="100950">
         <PCIInfo vendorID="8086" deviceID="9D3A" />
-        <PCIInfo vendorID="8086" deviceID="A13A" />
-        <Image type="DRVR" version="11.0.0.1146">
-          <file>production\Windows8-x86\heci.inf</file>
-          <file>production\Windows8-x86\HECI.cat</file>
-          <file>production\Windows8-x86\TeeDriver.sys</file>
-          <file>production\Windows8-x86\TeeDriverW8.sys</file>
-          <file>production\Windows8-x86\HECI.sys</file>
-          <file>production\Windows8-x86\TeeDriverx64.sys</file>
-          <file>production\Windows8-x86\TeeDriverW8x64.sys</file>
-          <file>production\Windows8-x86\HECIx64.sys</file>
+        <PCIInfo vendorID="8086" deviceID="A2BA" />
+        <PCIInfo vendorID="8086" deviceID="A1BA" />
+        <PCIInfo vendorID="8086" deviceID="5A9A" />
+        <PCIInfo vendorID="8086" deviceID="319A" />
+        <PCIInfo vendorID="8086" deviceID="9DE0" />
+        <PCIInfo vendorID="8086" deviceID="A360" />
+        <PCIInfo vendorID="8086" deviceID="3DE0" />
+        <PCIInfo vendorID="8086" deviceID="34E0" />
+        <PCIInfo vendorID="8086" deviceID="38E0" />
+        <PCIInfo vendorID="8086" deviceID="18D3" />
+        <PCIInfo vendorID="8086" deviceID="98E0" />
+        <Image type="DRVR" version="1914.13.0.1063">
+          <file>production\Windows10-x64\OemExtension.inf\OemExtension.inf</file>
+          <file>production\Windows10-x64\OemExtension.inf\OemExtension.cat</file>
         </Image>
       </Device>
-      <Device componentID="103308">
-        <PCIInfo vendorID="8086" deviceID="1E3A" />
-        <PCIInfo vendorID="8086" deviceID="1CBA" />
-        <PCIInfo vendorID="8086" deviceID="1C3A" />
-        <PCIInfo vendorID="8086" deviceID="1DBA" />
-        <PCIInfo vendorID="8086" deviceID="1D3A" />
-        <PCIInfo vendorID="8086" deviceID="8C3A" />
-        <PCIInfo vendorID="8086" deviceID="9C3A" />
-        <PCIInfo vendorID="8086" deviceID="8D3A" />
-        <PCIInfo vendorID="8086" deviceID="9CBA" />
-        <PCIInfo vendorID="8086" deviceID="8CBA" />
+      <Device componentID="100950">
         <PCIInfo vendorID="8086" deviceID="9D3A" />
-        <PCIInfo vendorID="8086" deviceID="A13A" />
-        <Image type="DRVR" version="11.0.0.1146">
-          <file>production\W2K12-x64\heci.inf</file>
-          <file>production\W2K12-x64\HECI.cat</file>
-          <file>production\W2K12-x64\TeeDriver.sys</file>
-          <file>production\W2K12-x64\TeeDriverW8.sys</file>
-          <file>production\W2K12-x64\HECI.sys</file>
-          <file>production\W2K12-x64\TeeDriverx64.sys</file>
-          <file>production\W2K12-x64\TeeDriverW8x64.sys</file>
-          <file>production\W2K12-x64\HECIx64.sys</file>
+        <PCIInfo vendorID="8086" deviceID="A2BA" />
+        <PCIInfo vendorID="8086" deviceID="A1BA" />
+        <PCIInfo vendorID="8086" deviceID="5A9A" />
+        <PCIInfo vendorID="8086" deviceID="319A" />
+        <PCIInfo vendorID="8086" deviceID="9DE0" />
+        <PCIInfo vendorID="8086" deviceID="A360" />
+        <PCIInfo vendorID="8086" deviceID="3DE0" />
+        <PCIInfo vendorID="8086" deviceID="34E0" />
+        <PCIInfo vendorID="8086" deviceID="38E0" />
+        <PCIInfo vendorID="8086" deviceID="18D3" />
+        <PCIInfo vendorID="8086" deviceID="98E0" />
+        <Image type="DRVR" version="1914.13.0.1063">
+          <file>production\Windows10-x86\OemExtension.inf\OemExtension.inf</file>
+          <file>production\Windows10-x86\OemExtension.inf\OemExtension.cat</file>
         </Image>
       </Device>
-      <Device componentID="103308">
-        <PCIInfo vendorID="8086" deviceID="1E3A" />
-        <PCIInfo vendorID="8086" deviceID="1CBA" />
-        <PCIInfo vendorID="8086" deviceID="1C3A" />
-        <PCIInfo vendorID="8086" deviceID="1DBA" />
-        <PCIInfo vendorID="8086" deviceID="1D3A" />
-        <PCIInfo vendorID="8086" deviceID="8C3A" />
-        <PCIInfo vendorID="8086" deviceID="9C3A" />
-        <PCIInfo vendorID="8086" deviceID="8D3A" />
-        <PCIInfo vendorID="8086" deviceID="9CBA" />
-        <PCIInfo vendorID="8086" deviceID="8CBA" />
+      <Device componentID="100950">
         <PCIInfo vendorID="8086" deviceID="9D3A" />
-        <PCIInfo vendorID="8086" deviceID="A13A" />
-        <Image type="DRVR" version="11.0.0.1146">
-          <file>production\Windows8.1-x64\heci.inf</file>
-          <file>production\Windows8.1-x64\HECI.cat</file>
-          <file>production\Windows8.1-x64\TeeDriver.sys</file>
-          <file>production\Windows8.1-x64\TeeDriverW8.sys</file>
-          <file>production\Windows8.1-x64\HECI.sys</file>
-          <file>production\Windows8.1-x64\TeeDriverx64.sys</file>
-          <file>production\Windows8.1-x64\TeeDriverW8x64.sys</file>
-          <file>production\Windows8.1-x64\HECIx64.sys</file>
+        <PCIInfo vendorID="8086" deviceID="A2BA" />
+        <PCIInfo vendorID="8086" deviceID="A1BA" />
+        <PCIInfo vendorID="8086" deviceID="5A9A" />
+        <PCIInfo vendorID="8086" deviceID="319A" />
+        <PCIInfo vendorID="8086" deviceID="9DE0" />
+        <PCIInfo vendorID="8086" deviceID="A360" />
+        <PCIInfo vendorID="8086" deviceID="3DE0" />
+        <PCIInfo vendorID="8086" deviceID="34E0" />
+        <PCIInfo vendorID="8086" deviceID="38E0" />
+        <PCIInfo vendorID="8086" deviceID="18D3" />
+        <PCIInfo vendorID="8086" deviceID="98E0" />
+        <Image type="DRVR" version="1914.13.0.1063">
+          <file>production\W2K16-x64\OemExtension.inf\OemExtension.inf</file>
+          <file>production\W2K16-x64\OemExtension.inf\OemExtension.cat</file>
         </Image>
       </Device>
-      <Device componentID="103308">
-        <PCIInfo vendorID="8086" deviceID="1E3A" />
-        <PCIInfo vendorID="8086" deviceID="1CBA" />
-        <PCIInfo vendorID="8086" deviceID="1C3A" />
-        <PCIInfo vendorID="8086" deviceID="1DBA" />
-        <PCIInfo vendorID="8086" deviceID="1D3A" />
-        <PCIInfo vendorID="8086" deviceID="8C3A" />
-        <PCIInfo vendorID="8086" deviceID="9C3A" />
-        <PCIInfo vendorID="8086" deviceID="8D3A" />
-        <PCIInfo vendorID="8086" deviceID="9CBA" />
-        <PCIInfo vendorID="8086" deviceID="8CBA" />
-        <PCIInfo vendorID="8086" deviceID="9D3A" />
-        <PCIInfo vendorID="8086" deviceID="A13A" />
-        <Image type="DRVR" version="11.0.0.1146">
-          <file>production\Windows8.1-x86\heci.inf</file>
-          <file>production\Windows8.1-x86\HECI.cat</file>
-          <file>production\Windows8.1-x86\TeeDriver.sys</file>
-          <file>production\Windows8.1-x86\TeeDriverW8.sys</file>
-          <file>production\Windows8.1-x86\HECI.sys</file>
-          <file>production\Windows8.1-x86\TeeDriverx64.sys</file>
-          <file>production\Windows8.1-x86\TeeDriverW8x64.sys</file>
-          <file>production\Windows8.1-x86\HECIx64.sys</file>
-        </Image>
-      </Device>
-      <Device componentID="103308">
-        <PCIInfo vendorID="8086" deviceID="1E3A" />
-        <PCIInfo vendorID="8086" deviceID="1CBA" />
-        <PCIInfo vendorID="8086" deviceID="1C3A" />
-        <PCIInfo vendorID="8086" deviceID="1DBA" />
-        <PCIInfo vendorID="8086" deviceID="1D3A" />
-        <PCIInfo vendorID="8086" deviceID="8C3A" />
-        <PCIInfo vendorID="8086" deviceID="9C3A" />
-        <PCIInfo vendorID="8086" deviceID="8D3A" />
-        <PCIInfo vendorID="8086" deviceID="9CBA" />
-        <PCIInfo vendorID="8086" deviceID="8CBA" />
-        <PCIInfo vendorID="8086" deviceID="9D3A" />
-        <PCIInfo vendorID="8086" deviceID="A13A" />
-        <Image type="DRVR" version="11.0.0.1146">
-          <file>production\W2K12R2-x64\heci.inf</file>
-          <file>production\W2K12R2-x64\HECI.cat</file>
-          <file>production\W2K12R2-x64\TeeDriver.sys</file>
-          <file>production\W2K12R2-x64\TeeDriverW8.sys</file>
-          <file>production\W2K12R2-x64\HECI.sys</file>
-          <file>production\W2K12R2-x64\TeeDriverx64.sys</file>
-          <file>production\W2K12R2-x64\TeeDriverW8x64.sys</file>
-          <file>production\W2K12R2-x64\HECIx64.sys</file>
-        </Image>
-      </Device>
-      <Device componentID="103308">
-        <PCIInfo vendorID="8086" deviceID="1E3A" />
-        <PCIInfo vendorID="8086" deviceID="1CBA" />
-        <PCIInfo vendorID="8086" deviceID="1C3A" />
-        <PCIInfo vendorID="8086" deviceID="1DBA" />
-        <PCIInfo vendorID="8086" deviceID="1D3A" />
-        <PCIInfo vendorID="8086" deviceID="8C3A" />
-        <PCIInfo vendorID="8086" deviceID="9C3A" />
-        <PCIInfo vendorID="8086" deviceID="8D3A" />
-        <PCIInfo vendorID="8086" deviceID="9CBA" />
-        <PCIInfo vendorID="8086" deviceID="8CBA" />
-        <PCIInfo vendorID="8086" deviceID="9D3A" />
-        <PCIInfo vendorID="8086" deviceID="A13A" />
-        <Image type="DRVR" version="11.0.0.1146">
-          <file>production\Windows10-x64\heci.inf</file>
-          <file>production\Windows10-x64\HECI.cat</file>
-          <file>production\Windows10-x64\TeeDriver.sys</file>
-          <file>production\Windows10-x64\TeeDriverW8.sys</file>
-          <file>production\Windows10-x64\HECI.sys</file>
-          <file>production\Windows10-x64\TeeDriverx64.sys</file>
-          <file>production\Windows10-x64\TeeDriverW8x64.sys</file>
-          <file>production\Windows10-x64\HECIx64.sys</file>
-        </Image>
-      </Device>
-      <Device componentID="103308">
-        <PCIInfo vendorID="8086" deviceID="1E3A" />
-        <PCIInfo vendorID="8086" deviceID="1CBA" />
-        <PCIInfo vendorID="8086" deviceID="1C3A" />
-        <PCIInfo vendorID="8086" deviceID="1DBA" />
-        <PCIInfo vendorID="8086" deviceID="1D3A" />
-        <PCIInfo vendorID="8086" deviceID="8C3A" />
-        <PCIInfo vendorID="8086" deviceID="9C3A" />
-        <PCIInfo vendorID="8086" deviceID="8D3A" />
-        <PCIInfo vendorID="8086" deviceID="9CBA" />
-        <PCIInfo vendorID="8086" deviceID="8CBA" />
-        <PCIInfo vendorID="8086" deviceID="9D3A" />
-        <PCIInfo vendorID="8086" deviceID="A13A" />
-        <Image type="DRVR" version="11.0.0.1146">
-          <file>production\Windows10-x86\heci.inf</file>
-          <file>production\Windows10-x86\HECI.cat</file>
-          <file>production\Windows10-x86\TeeDriver.sys</file>
-          <file>production\Windows10-x86\TeeDriverW8.sys</file>
-          <file>production\Windows10-x86\HECI.sys</file>
-          <file>production\Windows10-x86\TeeDriverx64.sys</file>
-          <file>production\Windows10-x86\TeeDriverW8x64.sys</file>
-          <file>production\Windows10-x86\HECIx64.sys</file>
-        </Image>
-      </Device>
-      <Device componentID="103308">
-        <Image type="APP" version="11.0.0.1153">
+      <Device componentID="100950">
+        <Image type="APP" version="1926.13.0.1085">
           <file>SetupME.exe</file>
         </Image>
       </Device>
@@ -528,28 +329,13 @@
       </vendoroption>
     </behavior>
     <behavior name="attended" />
-    <behavior name="help">
-      <vendoroption>
-        <optionvalue switch="/" requiresvalue="false">?</optionvalue>
-      </vendoroption>
-    </behavior>
     <behavior name="unattended">
       <vendoroption>
         <optionvalue switch="/" requiresvalue="false">s</optionvalue>
       </vendoroption>
-      <!-- The DUP will Restart the system
-      <vendoroption>
-        <optionvalue switch="/" requiresvalue="false">b</optionvalue>
-      </vendoroption>
--->
     </behavior>
   </behaviors>
   <parameters>
-    <parametermapping name="force">
-      <vendoroption>
-        <optionvalue switch="/" requiresvalue="false">overwrite</optionvalue>
-      </vendoroption>
-    </parametermapping>
     <parametermapping name="logfile">
       <vendoroption>
         <optionvalue switch="/" requiresvalue="true" valuedelimiter=" " enclose="&quot;">report</optionvalue>
@@ -568,14 +354,6 @@
       <!--Always able to DownGrade, Installer Doesn't need to support-->
       <vendorreturncode>9999</vendorreturncode>
     </returncodemapping>
-    <returncodemapping name="REBOOT_UPDATE_PENDING">
-      <!--Installer only Reboots Once, Installer Doesn't need to support-->
-      <vendorreturncode>9999</vendorreturncode>
-    </returncodemapping>
-    <returncodemapping name="DEP_SOFT_ERROR">
-      <!-- 1603=Standard Win32 fatal error code -->
-      <vendorreturncode>1603</vendorreturncode>
-    </returncodemapping>
     <returncodemapping name="DEP_HARD_ERROR">
       <vendorreturncode>1603</vendorreturncode>
     </returncodemapping>
@@ -588,42 +366,63 @@
     <returncodemapping name="REBOOT_REQUIRED">
       <vendorreturncode>3010</vendorreturncode>
     </returncodemapping>
-    <returncodemapping name="ERROR_INSTALL_PLATFORM_UNSUPPORTED">
-      <vendorreturncode>1603</vendorreturncode>
-    </returncodemapping>
-    <returncodemapping name="UNKNOWN_OPTION">
-      <vendorreturncode>1603</vendorreturncode>
-    </returncodemapping>
   </returncodes>
   <inventorymetadata>
     <extractdriversidentifier>
       <pnpids>
-        <pnpdevice componentID="103308">
-          <!--filename: \Drivers\HECI\heci.inf-->
-          <driverversion>11.0.0.1146</driverversion>
-          <pciinfo vendorID="8086" deviceID="1E3A" />
-          <pciinfo vendorID="8086" deviceID="1CBA" />
-          <pciinfo vendorID="8086" deviceID="1C3A" />
-          <pciinfo vendorID="8086" deviceID="1DBA" />
-          <pciinfo vendorID="8086" deviceID="1D3A" />
-          <pciinfo vendorID="8086" deviceID="8C3A" />
-          <pciinfo vendorID="8086" deviceID="9C3A" />
-          <pciinfo vendorID="8086" deviceID="8D3A" />
-          <pciinfo vendorID="8086" deviceID="9CBA" />
-          <pciinfo vendorID="8086" deviceID="8CBA" />
+        <pnpdevice componentID="100950">
+          <!--filename: \win7\heci.inf-->
+          <driverversion>1910.13.0.1060</driverversion>
           <pciinfo vendorID="8086" deviceID="9D3A" />
           <pciinfo vendorID="8086" deviceID="A13A" />
+          <pciinfo vendorID="8086" deviceID="A2BA" />
+          <pciinfo vendorID="8086" deviceID="A1BA" />
+          <pciinfo vendorID="8086" deviceID="A23A" />
+          <pciinfo vendorID="8086" deviceID="9DE0" />
+          <pciinfo vendorID="8086" deviceID="A360" />
+          <pciinfo vendorID="8086" deviceID="A1BD" />
+        </pnpdevice>
+        <pnpdevice componentID="100950">
+          <!--filename: \win10\heci.inf-->
+          <driverversion>1910.13.0.1060</driverversion>
+          <pciinfo vendorID="8086" deviceID="9D3A" />
+          <pciinfo vendorID="8086" deviceID="A13A" />
+          <pciinfo vendorID="8086" deviceID="A2BA" />
+          <pciinfo vendorID="8086" deviceID="9DE0" />
+          <pciinfo vendorID="8086" deviceID="A360" />
+          <pciinfo vendorID="8086" deviceID="34E0" />
+          <pciinfo vendorID="8086" deviceID="38E0" />
+          <pciinfo vendorID="8086" deviceID="A1BA" />
+          <pciinfo vendorID="8086" deviceID="A23A" />
+          <pciinfo vendorID="8086" deviceID="18D3" />
+        </pnpdevice>
+        <pnpdevice componentID="100950">
+          <!--filename: \win10\OemExtension.inf-->
+          <driverversion>1914.13.0.1063</driverversion>
+          <pciinfo vendorID="8086" deviceID="9D3A" />
+          <pciinfo vendorID="8086" deviceID="A2BA" />
+          <pciinfo vendorID="8086" deviceID="A1BA" />
+          <pciinfo vendorID="8086" deviceID="5A9A" />
+          <pciinfo vendorID="8086" deviceID="319A" />
+          <pciinfo vendorID="8086" deviceID="9DE0" />
+          <pciinfo vendorID="8086" deviceID="A360" />
+          <pciinfo vendorID="8086" deviceID="3DE0" />
+          <pciinfo vendorID="8086" deviceID="34E0" />
+          <pciinfo vendorID="8086" deviceID="38E0" />
+          <pciinfo vendorID="8086" deviceID="18D3" />
+          <pciinfo vendorID="8086" deviceID="98E0" />
         </pnpdevice>
       </pnpids>
     </extractdriversidentifier>
     <fullpackageidentifier>
-      <msis>
-        <msi componentID="103308">
-          <identifyingnumber>{1CEAC85D-2590-4760-800F-8DE5E91F3700}</identifyingnumber>
-          <upgradecode>{1CEAC85D-2590-4760-800F-8DE5E91F3700}</upgradecode>
-          <version>11.0.0.1153</version>
-        </msi>
-      </msis>
+      <registrykeys>
+        <registrykey componentID="100950">
+          <displayName>HKEY_LOCAL_MACHINE\SOFTWARE\ManageableUpdatePackage\Intel\ME\Display</displayName>
+          <displayValue>Intel(R) Management Engine Firmware</displayValue>
+          <name>HKEY_LOCAL_MACHINE\SOFTWARE\ManageableUpdatePackage\Intel\ME\Version</name>
+          <value>1926.13.0.1085</value>
+        </registrykey>
+      </registrykeys>
     </fullpackageidentifier>
   </inventorymetadata>
 </MUPDefinition>

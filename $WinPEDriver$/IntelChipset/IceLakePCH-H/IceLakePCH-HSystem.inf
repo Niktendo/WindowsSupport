@@ -1,0 +1,271 @@
+; ************************************************************
+; ************************************************************
+; **  Filename: IceLakePCH-HSystem.inf                      **
+; **  Abstract: Assigns the null driver to devices          **
+; **            for yellow-bang removal and                 **
+; **            brands Intel(R) devices                     ** 
+; ************************************************************
+; ************************************************************
+
+[Version]
+Signature=$WINDOWS NT$
+Class=System
+ClassGUID={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%INTEL%
+CatalogFile=IceLakePCH-H.cat
+DriverVer=07/18/1968, 10.1.23.3
+
+[SourceDisksNames]
+
+[SourceDisksFiles]
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%INTEL%=INTEL,NTx86,NTamd64
+
+[INTEL.NTx86]
+%PCI\VEN_8086&DEV_3D80Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D80
+%PCI\VEN_8086&DEV_3D81Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D81
+%PCI\VEN_8086&DEV_3D82Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D82
+%PCI\VEN_8086&DEV_3D83Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D83
+%PCI\VEN_8086&DEV_3D84Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D84
+%PCI\VEN_8086&DEV_3D85Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D85
+%PCI\VEN_8086&DEV_3D86Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D86
+%PCI\VEN_8086&DEV_3D87Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D87
+%PCI\VEN_8086&DEV_3D88Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D88
+%PCI\VEN_8086&DEV_3D89Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D89
+%PCI\VEN_8086&DEV_3D8ADesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D8A
+%PCI\VEN_8086&DEV_3D8BDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D8B
+%PCI\VEN_8086&DEV_3D8CDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D8C
+%PCI\VEN_8086&DEV_3D8DDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D8D
+%PCI\VEN_8086&DEV_3D8EDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D8E
+%PCI\VEN_8086&DEV_3D8FDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D8F
+%PCI\VEN_8086&DEV_3D90Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D90
+%PCI\VEN_8086&DEV_3D91Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D91
+%PCI\VEN_8086&DEV_3D92Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D92
+%PCI\VEN_8086&DEV_3D93Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D93
+%PCI\VEN_8086&DEV_3D94Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D94
+%PCI\VEN_8086&DEV_3D95Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D95
+%PCI\VEN_8086&DEV_3D96Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D96
+%PCI\VEN_8086&DEV_3D97Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D97
+%PCI\VEN_8086&DEV_3D98Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D98
+%PCI\VEN_8086&DEV_3D99Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D99
+%PCI\VEN_8086&DEV_3D9ADesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D9A
+%PCI\VEN_8086&DEV_3D9BDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D9B
+%PCI\VEN_8086&DEV_3D9CDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D9C
+%PCI\VEN_8086&DEV_3D9DDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D9D
+%PCI\VEN_8086&DEV_3D9EDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D9E
+%PCI\VEN_8086&DEV_3D9FDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D9F
+%PCI\VEN_8086&DEV_3DA0Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3DA0
+%PCI\VEN_8086&DEV_3DA1Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3DA1
+%PCI\VEN_8086&DEV_3DA3Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3DA3
+%PCI\VEN_8086&DEV_3DA4Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3DA4
+%PCI\VEN_8086&DEV_3DA6Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3DA6
+%PCI\VEN_8086&DEV_3DB0Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DB0
+%PCI\VEN_8086&DEV_3DB1Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DB1
+%PCI\VEN_8086&DEV_3DB2Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DB2
+%PCI\VEN_8086&DEV_3DB3Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DB3
+%PCI\VEN_8086&DEV_3DB4Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DB4
+%PCI\VEN_8086&DEV_3DB5Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DB5
+%PCI\VEN_8086&DEV_3DB6Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DB6
+%PCI\VEN_8086&DEV_3DB7Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DB7
+%PCI\VEN_8086&DEV_3DB8Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DB8
+%PCI\VEN_8086&DEV_3DB9Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DB9
+%PCI\VEN_8086&DEV_3DBADesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DBA
+%PCI\VEN_8086&DEV_3DBBDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DBB
+%PCI\VEN_8086&DEV_3DBCDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DBC
+%PCI\VEN_8086&DEV_3DBDDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DBD
+%PCI\VEN_8086&DEV_3DBEDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DBE
+%PCI\VEN_8086&DEV_3DBFDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DBF
+%PCI\VEN_8086&DEV_3DC0Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DC0
+%PCI\VEN_8086&DEV_3DC1Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DC1
+%PCI\VEN_8086&DEV_3DC2Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DC2
+%PCI\VEN_8086&DEV_3DC3Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DC3
+%PCI\VEN_8086&DEV_3DC4Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DC4
+%PCI\VEN_8086&DEV_3DC5Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DC5
+%PCI\VEN_8086&DEV_3DC6Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DC6
+%PCI\VEN_8086&DEV_3DC7Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DC7
+
+[INTEL.NTamd64]
+%PCI\VEN_8086&DEV_3D80Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D80
+%PCI\VEN_8086&DEV_3D81Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D81
+%PCI\VEN_8086&DEV_3D82Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D82
+%PCI\VEN_8086&DEV_3D83Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D83
+%PCI\VEN_8086&DEV_3D84Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D84
+%PCI\VEN_8086&DEV_3D85Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D85
+%PCI\VEN_8086&DEV_3D86Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D86
+%PCI\VEN_8086&DEV_3D87Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D87
+%PCI\VEN_8086&DEV_3D88Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D88
+%PCI\VEN_8086&DEV_3D89Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D89
+%PCI\VEN_8086&DEV_3D8ADesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D8A
+%PCI\VEN_8086&DEV_3D8BDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D8B
+%PCI\VEN_8086&DEV_3D8CDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D8C
+%PCI\VEN_8086&DEV_3D8DDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D8D
+%PCI\VEN_8086&DEV_3D8EDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D8E
+%PCI\VEN_8086&DEV_3D8FDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D8F
+%PCI\VEN_8086&DEV_3D90Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D90
+%PCI\VEN_8086&DEV_3D91Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D91
+%PCI\VEN_8086&DEV_3D92Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D92
+%PCI\VEN_8086&DEV_3D93Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D93
+%PCI\VEN_8086&DEV_3D94Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D94
+%PCI\VEN_8086&DEV_3D95Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D95
+%PCI\VEN_8086&DEV_3D96Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D96
+%PCI\VEN_8086&DEV_3D97Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D97
+%PCI\VEN_8086&DEV_3D98Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D98
+%PCI\VEN_8086&DEV_3D99Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D99
+%PCI\VEN_8086&DEV_3D9ADesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D9A
+%PCI\VEN_8086&DEV_3D9BDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D9B
+%PCI\VEN_8086&DEV_3D9CDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D9C
+%PCI\VEN_8086&DEV_3D9DDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D9D
+%PCI\VEN_8086&DEV_3D9EDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D9E
+%PCI\VEN_8086&DEV_3D9FDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3D9F
+%PCI\VEN_8086&DEV_3DA0Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3DA0
+%PCI\VEN_8086&DEV_3DA1Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3DA1
+%PCI\VEN_8086&DEV_3DA3Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3DA3
+%PCI\VEN_8086&DEV_3DA4Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3DA4
+%PCI\VEN_8086&DEV_3DA6Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3DA6
+%PCI\VEN_8086&DEV_3DB0Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DB0
+%PCI\VEN_8086&DEV_3DB1Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DB1
+%PCI\VEN_8086&DEV_3DB2Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DB2
+%PCI\VEN_8086&DEV_3DB3Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DB3
+%PCI\VEN_8086&DEV_3DB4Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DB4
+%PCI\VEN_8086&DEV_3DB5Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DB5
+%PCI\VEN_8086&DEV_3DB6Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DB6
+%PCI\VEN_8086&DEV_3DB7Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DB7
+%PCI\VEN_8086&DEV_3DB8Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DB8
+%PCI\VEN_8086&DEV_3DB9Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DB9
+%PCI\VEN_8086&DEV_3DBADesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DBA
+%PCI\VEN_8086&DEV_3DBBDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DBB
+%PCI\VEN_8086&DEV_3DBCDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DBC
+%PCI\VEN_8086&DEV_3DBDDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DBD
+%PCI\VEN_8086&DEV_3DBEDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DBE
+%PCI\VEN_8086&DEV_3DBFDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DBF
+%PCI\VEN_8086&DEV_3DC0Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DC0
+%PCI\VEN_8086&DEV_3DC1Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DC1
+%PCI\VEN_8086&DEV_3DC2Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DC2
+%PCI\VEN_8086&DEV_3DC3Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DC3
+%PCI\VEN_8086&DEV_3DC4Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DC4
+%PCI\VEN_8086&DEV_3DC5Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DC5
+%PCI\VEN_8086&DEV_3DC6Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DC6
+%PCI\VEN_8086&DEV_3DC7Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3DC7
+
+[Needs_MSISADRV]
+Include=machine.inf
+Needs=MSISADRV
+
+[Needs_MSISADRV.Services]
+Include=machine.inf
+Needs=MSISADRV.Services
+
+[Needs_NO_DRV]
+Include=machine.inf
+Needs=NO_DRV
+
+[Needs_NO_DRV.Services]
+Include=machine.inf
+Needs=NO_DRV.Services
+
+[Needs_PCI_DRV]
+Include=machine.inf
+Needs=PCI_DRV
+
+[Needs_PCI_DRV.Services]
+Include=machine.inf
+Needs=PCI_DRV.Services
+
+[Needs_PCI_DRV.HW]
+Include=machine.inf
+Needs=PCI_DRV.HW
+
+[Strings]
+INTEL="INTEL"
+PCI\VEN_8086&DEV_3D80Desc="Intel(R) LPC Controller (eSPI Enable Strap = 0)/eSPI Controller (eSPI Enable Strap = 1) - 3D80"
+PCI\VEN_8086&DEV_3D81Desc="Intel(R) LPC Controller/eSPI Controller - 3D81"
+PCI\VEN_8086&DEV_3D82Desc="Intel(R) LPC Controller/eSPI Controller - 3D82"
+PCI\VEN_8086&DEV_3D83Desc="Intel(R) LPC Controller (H410) - 3D83"
+PCI\VEN_8086&DEV_3D84Desc="Intel(R) LPC Controller (H470) - 3D84"
+PCI\VEN_8086&DEV_3D85Desc="Intel(R) LPC Controller (Z470) - 3D85"
+PCI\VEN_8086&DEV_3D86Desc="Intel(R) LPC Controller (Q470) - 3D86"
+PCI\VEN_8086&DEV_3D87Desc="Intel(R) LPC Controller/eSPI Controller - 3D87"
+PCI\VEN_8086&DEV_3D88Desc="Intel(R) LPC Controller (B460) - 3D88"
+PCI\VEN_8086&DEV_3D89Desc="Intel(R) LPC Controller (C256) - 3D89"
+PCI\VEN_8086&DEV_3D8ADesc="Intel(R) LPC Controller (C252) - 3D8A"
+PCI\VEN_8086&DEV_3D8BDesc="Intel(R) LPC Controller (X699) - 3D8B"
+PCI\VEN_8086&DEV_3D8CDesc="Intel(R) LPC Controller (QM470) - 3D8C"
+PCI\VEN_8086&DEV_3D8DDesc="Intel(R) LPC Controller (HM470) - 3D8D"
+PCI\VEN_8086&DEV_3D8EDesc="Intel(R) LPC Controller (CM256) - 3D8E"
+PCI\VEN_8086&DEV_3D8FDesc="Intel(R) LPC Controller/eSPI Controller - 3D8F"
+PCI\VEN_8086&DEV_3D90Desc="Intel(R) LPC Controller/eSPI Controller - 3D90"
+PCI\VEN_8086&DEV_3D91Desc="Intel(R) LPC Controller/eSPI Controller - 3D91"
+PCI\VEN_8086&DEV_3D92Desc="Intel(R) LPC Controller/eSPI Controller - 3D92"
+PCI\VEN_8086&DEV_3D93Desc="Intel(R) LPC Controller/eSPI Controller - 3D93"
+PCI\VEN_8086&DEV_3D94Desc="Intel(R) LPC Controller/eSPI Controller - 3D94"
+PCI\VEN_8086&DEV_3D95Desc="Intel(R) LPC Controller/eSPI Controller - 3D95"
+PCI\VEN_8086&DEV_3D96Desc="Intel(R) LPC Controller/eSPI Controller - 3D96"
+PCI\VEN_8086&DEV_3D97Desc="Intel(R) LPC Controller/eSPI Controller - 3D97"
+PCI\VEN_8086&DEV_3D98Desc="Intel(R) LPC Controller/eSPI Controller - 3D98"
+PCI\VEN_8086&DEV_3D99Desc="Intel(R) LPC Controller/eSPI Controller - 3D99"
+PCI\VEN_8086&DEV_3D9ADesc="Intel(R) LPC Controller/eSPI Controller - 3D9A"
+PCI\VEN_8086&DEV_3D9BDesc="Intel(R) LPC Controller/eSPI Controller - 3D9B"
+PCI\VEN_8086&DEV_3D9CDesc="Intel(R) LPC Controller/eSPI Controller - 3D9C"
+PCI\VEN_8086&DEV_3D9DDesc="Intel(R) LPC Controller/eSPI Controller - 3D9D"
+PCI\VEN_8086&DEV_3D9EDesc="Intel(R) LPC Controller/eSPI Controller - 3D9E"
+PCI\VEN_8086&DEV_3D9FDesc="Intel(R) LPC Controller/eSPI Controller - 3D9F"
+PCI\VEN_8086&DEV_3DA0Desc="Intel(R) P2SB - 3DA0"
+PCI\VEN_8086&DEV_3DA1Desc="Intel(R) PMC - 3DA1"
+PCI\VEN_8086&DEV_3DA3Desc="Intel(R) SMBus - 3DA3"
+PCI\VEN_8086&DEV_3DA4Desc="Intel(R) SPI (flash) Controller - 3DA4"
+PCI\VEN_8086&DEV_3DA6Desc="Intel(R) North Peak - 3DA6"
+PCI\VEN_8086&DEV_3DB0Desc="Intel(R) PCI Express Root Port #9 - 3DB0"
+PCI\VEN_8086&DEV_3DB1Desc="Intel(R) PCI Express Root Port #10 - 3DB1"
+PCI\VEN_8086&DEV_3DB2Desc="Intel(R) PCI Express Root Port #11 - 3DB2"
+PCI\VEN_8086&DEV_3DB3Desc="Intel(R) PCI Express Root Port #12 - 3DB3"
+PCI\VEN_8086&DEV_3DB4Desc="Intel(R) PCI Express Root Port #13 - 3DB4"
+PCI\VEN_8086&DEV_3DB5Desc="Intel(R) PCI Express Root Port #14 - 3DB5"
+PCI\VEN_8086&DEV_3DB6Desc="Intel(R) PCI Express Root Port #15 - 3DB6"
+PCI\VEN_8086&DEV_3DB7Desc="Intel(R) PCI Express Root Port #16 - 3DB7"
+PCI\VEN_8086&DEV_3DB8Desc="Intel(R) PCI Express Root Port #1 - 3DB8"
+PCI\VEN_8086&DEV_3DB9Desc="Intel(R) PCI Express Root Port #2 - 3DB9"
+PCI\VEN_8086&DEV_3DBADesc="Intel(R) PCI Express Root Port #3 - 3DBA"
+PCI\VEN_8086&DEV_3DBBDesc="Intel(R) PCI Express Root Port #4 - 3DBB"
+PCI\VEN_8086&DEV_3DBCDesc="Intel(R) PCI Express Root Port #5 - 3DBC"
+PCI\VEN_8086&DEV_3DBDDesc="Intel(R) PCI Express Root Port #6 - 3DBD"
+PCI\VEN_8086&DEV_3DBEDesc="Intel(R) PCI Express Root Port #7 - 3DBE"
+PCI\VEN_8086&DEV_3DBFDesc="Intel(R) PCI Express Root Port #8 - 3DBF"
+PCI\VEN_8086&DEV_3DC0Desc="Intel(R) PCI Express Root Port #17 - 3DC0"
+PCI\VEN_8086&DEV_3DC1Desc="Intel(R) PCI Express Root Port #18 - 3DC1"
+PCI\VEN_8086&DEV_3DC2Desc="Intel(R) PCI Express Root Port #19 - 3DC2"
+PCI\VEN_8086&DEV_3DC3Desc="Intel(R) PCI Express Root Port #20 - 3DC3"
+PCI\VEN_8086&DEV_3DC4Desc="Intel(R) PCI Express Root Port #21 - 3DC4"
+PCI\VEN_8086&DEV_3DC5Desc="Intel(R) PCI Express Root Port #22 - 3DC5"
+PCI\VEN_8086&DEV_3DC6Desc="Intel(R) PCI Express Root Port #23 - 3DC6"
+PCI\VEN_8086&DEV_3DC7Desc="Intel(R) PCI Express Root Port #24 - 3DC7"
+
+
+
+
+; Copyright (c) 2003-2019 Intel Corporation
+; 
+; ********************************************************************************
+; Intel is making no claims of usability, efficacy or warranty.
+; ********************************************************************************
+; Information in this document is provided in connection with Intel products. No
+; license, express or implied, by estoppel or otherwise, to any intellectual
+; property rights is granted by this document. Intel assumes no liability
+; whatsoever, and Intel disclaims any express or implied warranty, relating to
+; sale and/or use of Intel products including liability or warranties relating to
+; fitness for a particular purpose, merchantability, or infringement of any
+; patent, copyright or other intellectual property right. Intel products are not
+; intended for use in medical, life saving, or life sustaining applications.
+; ********************************************************************************
+; Intel Corporation disclaims all warranties and liabilities for the use of this
+; document and the information contained herein, and assumes no responsibility for
+; any errors which may appear in this document, nor does Intel make a commitment
+; to update the information contained herein. Intel reserves the right to make
+; changes to this document at any time, without notice.
+; ********************************************************************************
+; ********************************************************************************
+; 
+; * Third-party brands and names are the property of their respective owners.
