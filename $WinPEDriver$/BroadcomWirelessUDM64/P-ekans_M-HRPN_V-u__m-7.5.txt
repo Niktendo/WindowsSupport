@@ -479,3 +479,6 @@ srom_wrt_time=6
 pcie_slave_axi_timeout=0
 # This is the timeout for the host mem read from the firmware in us
 sw_d2h_read_timeout=55000
+# Asymetric interf (noise) mitigation
+asym_interf_noise_delta_thresh=5
+asym_interf_mit_en=1

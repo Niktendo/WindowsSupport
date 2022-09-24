@@ -3,7 +3,7 @@ Signature="$WINDOWS NT$"
 Class=MEDIA
 Provider=%ProviderName%
 ClassGUID={4d36e96c-e325-11ce-bfc1-08002be10318}
-DriverVer = 01/13/2020,6.1.7800.3
+DriverVer = 09/29/2020,6.1.8100.4
 CatalogFile=AppleAudio.cat
 
 [SourceDisksNames]

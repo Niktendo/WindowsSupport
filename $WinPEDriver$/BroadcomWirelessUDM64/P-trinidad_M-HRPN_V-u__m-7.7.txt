@@ -486,3 +486,11 @@ srom_wrt_time=6
 pcie_slave_axi_timeout=0
 # This is the timeout for the host mem read from the firmware in us
 sw_d2h_read_timeout=55000
+fcc_violation_ch_list=106,122
+#/* fcc_violation_war = 0 Ch106/122 will be operating as 3x3 */
+#/* fcc_violation_war = 1 Ch106/122 will be advertized as 3x3 but will be operating as 2x3 */
+#/* fcc_violation_war = 2 Ch106/122 will be advertized as 2x2 but will be operating as 2x3 */
+fcc_violation_war=1
+# Asymetric interf (noise) mitigation
+asym_interf_noise_delta_thresh=5
+asym_interf_mit_en=1

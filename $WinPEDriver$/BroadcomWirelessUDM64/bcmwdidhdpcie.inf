@@ -9,7 +9,7 @@ Class           = Net
 ClassGUID       = {4d36e972-e325-11ce-bfc1-08002be10318}
 Provider        = %V_BCM%
 PnPLockDown	= 1
-DriverVer=12/16/2019, 101.10.152.5
+DriverVer=01/10/2022, 101.10.603.0
 CatalogFile     = bcmpciedhd63.cat
 
 [Manufacturer]
@@ -113,6 +113,10 @@ CatalogFile     = bcmpciedhd63.cat
 	HKR,    Ndi,    Service,                0,      "BCMPCIEDHD63"
 ;w8dhd	HKR,    Ndi,    Service,                0,      "BCMPCIEDHD63"
 
+[BCMPCIE43XX_AX.brcm.reg]
+	HKR,    Ndi,    HelpText,               ,       %BCM43XX_AX_HELP%
+	HKR,    Ndi,    Service,                0,      "BCMPCIEDHD63"
+
 [common.EventLog]
 	AddReg = common.AddEventLog.reg
 
@@ -127,6 +131,19 @@ CatalogFile     = bcmpciedhd63.cat
 	ErrorControl    = 1                     ; %SERVICE_ERROR_NORMAL%
 	ServiceBinary   = %12%\bcmpciedhd63.sys
 	LoadOrderGroup  = NDIS
+	AddReg = BCMPCIE43XX_NT62.reg
+
+[BCMPCIE43XX_NT62.reg]
+	HKR,  , "DriverVersion", 0, %DriverVersion%
+
+[BCMPCIE43XX_AX_NT62.Service]
+	DisplayName     = %BCM43XXPCIE_AX_Service_DispName%
+	ServiceType     = 1                     ; %SERVICE_KERNEL_DRIVER%
+	StartType       = 3                     ; %SERVICE_DEMAND_START%
+	ErrorControl    = 1                     ; %SERVICE_ERROR_NORMAL%
+	ServiceBinary   = %12%\bcmpciedhd63.sys
+	LoadOrderGroup  = NDIS
+
 
 [BCM43XAC_NT62_4364.files]
 	bcmpciedhd63.sys,,,6
@@ -148,6 +165,11 @@ CatalogFile     = bcmpciedhd63.cat
 	P-hanauma_M-HRPN_V-u__m-7.7.txt,,,6
 	P-bali_M-HRPN_V-m__m-7.9.txt,,,6
 	P-bali_M-HRPN_V-u__m-7.7.txt,,,6
+	P-kure_M-HRPN_V-m__m-7.9.txt,,,6
+	P-kure_M-HRPN_V-u__m-7.7.txt,,,6
+	P-borneo_M-HRPN_V-m__m-7.9.txt,,,6
+	P-borneo_M-HRPN_V-u__m-7.9.txt,,,6
+	P-borneo_M-HRPN_V-u__m-7.7.txt,,,6
 	P-kahana_M-HRPN_V-m__m-7.9.txt,,,6
 	P-kahana_M-HRPN_V-u__m-7.7.txt,,,6
 	P-trinidad_M-HRPN_V-m__m-7.9.txt,,,6
@@ -172,6 +194,10 @@ CatalogFile     = bcmpciedhd63.cat
 	4364r4kahana.txcap_blob,4364_kahana.txcap_blob,,6
 	4364r4trinidad.clm_blob,4364_trinidad.clm_blob,,6
 	4364r4trinidad.txcap_blob,4364_trinidad.txcap_blob,,6
+	4364r4kure.clm_blob,4364_kure.clm_blob,,6
+	4364r4kure.txcap_blob,4364_kure.txcap_blob,,6
+	4364r4borneo.clm_blob,4364_borneo.clm_blob,,6
+	4364r4borneo.txcap_blob,4364_borneo.txcap_blob,,6
 
 [BCM43XAC_NT62_4355.files]
 	bcmpciedhd63.sys,,,6
@@ -228,11 +254,26 @@ CatalogFile     = bcmpciedhd63.cat
 	4377r4fiji.clm_blob,4377_fiji.clm_blob,,6
 	4377r4fiji.txcap_blob,4377_fiji.txcap_blob,,6
 ; tahiti
+	P-tahiti_M-SPPR_V-m__m-2.1.txt,P-tahiti_M-SPPR_V-m__m.txt,,6
+	P-tahiti_M-SPPR_V-m__m-2.3.txt,P-tahiti_M-SPPR_V-m__m.txt,,6
+	P-tahiti_M-SPPR_V-m__m-2.5.txt,P-tahiti_M-SPPR_V-m__m.txt,,6
+	P-tahiti_M-SPPR_V-m__m-3.1.txt,P-tahiti_M-SPPR_V-m__m.txt,,6
+	P-tahiti_M-SPPR_V-m__m-3.3.txt,P-tahiti_M-SPPR_V-m__m.txt,,6
+	P-tahiti_M-SPPR_V-m__m-3.5.txt,P-tahiti_M-SPPR_V-m__m.txt,,6
+	P-tahiti_M-SPPR_V-m__m-4.1.txt,P-tahiti_M-SPPR_V-m__m.txt,,6
+	P-tahiti_M-SPPR_V-m__m-4.3.txt,P-tahiti_M-SPPR_V-m__m.txt,,6
 	P-tahiti_M-SPPR_V-m__m-4.5.txt,P-tahiti_M-SPPR_V-m__m.txt,,6
+	P-tahiti_M-SPPR_V-u__m-2.1.txt,P-tahiti_M-SPPR_V-u__m.txt,,6
+	P-tahiti_M-SPPR_V-u__m-2.3.txt,P-tahiti_M-SPPR_V-u__m.txt,,6
+	P-tahiti_M-SPPR_V-u__m-2.5.txt,P-tahiti_M-SPPR_V-u__m.txt,,6
+	P-tahiti_M-SPPR_V-u__m-3.1.txt,P-tahiti_M-SPPR_V-u__m.txt,,6
+	P-tahiti_M-SPPR_V-u__m-3.3.txt,P-tahiti_M-SPPR_V-u__m.txt,,6
+	P-tahiti_M-SPPR_V-u__m-3.5.txt,P-tahiti_M-SPPR_V-u__m.txt,,6
+	P-tahiti_M-SPPR_V-u__m-4.1.txt,P-tahiti_M-SPPR_V-u__m.txt,,6
+	P-tahiti_M-SPPR_V-u__m-4.3.txt,P-tahiti_M-SPPR_V-u__m.txt,,6
 	P-tahiti_M-SPPR_V-u__m-4.5.txt,P-tahiti_M-SPPR_V-u__m.txt,,6
 	4377r4tahiti.clm_blob,4377_tahiti.clm_blob,,6
 	4377r4tahiti.txcap_blob,4377_tahiti.txcap_blob,,6
-
 
 ; 11 == %windir%/system32
 ; 12 == %windir%/system32/drivers
@@ -270,6 +311,11 @@ CatalogFile     = bcmpciedhd63.cat
 	P-hanauma_M-HRPN_V-u__m-7.7.txt=1
 	P-bali_M-HRPN_V-m__m-7.9.txt=1
 	P-bali_M-HRPN_V-u__m-7.7.txt=1
+	P-kure_M-HRPN_V-m__m-7.9.txt=1
+	P-kure_M-HRPN_V-u__m-7.7.txt=1
+	P-borneo_M-HRPN_V-m__m-7.9.txt=1
+	P-borneo_M-HRPN_V-u__m-7.9.txt=1
+	P-borneo_M-HRPN_V-u__m-7.7.txt=1
 	P-kahana_M-HRPN_V-m__m-7.9.txt=1
 	P-kahana_M-HRPN_V-u__m-7.7.txt=1
 	P-trinidad_M-HRPN_V-m__m-7.9.txt=1
@@ -298,6 +344,10 @@ CatalogFile     = bcmpciedhd63.cat
 	4364_hanauma.txcap_blob=1
 	4364_bali.clm_blob=1
 	4364_bali.txcap_blob=1
+	4364_kure.clm_blob=1
+	4364_kure.txcap_blob=1
+	4364_borneo.clm_blob=1
+	4364_borneo.txcap_blob=1
 	4364_kahana.clm_blob=1
 	4364_kahana.txcap_blob=1
 	4364_trinidad.clm_blob=1
@@ -344,6 +394,7 @@ CatalogFile     = bcmpciedhd63.cat
 	HKR,	,"BTCoexist",     0,  "3"
 	HKR,	,"NetworkType",   0,  "-1"
 	HKR,	,"DxOverrideHot", 0,  "1"
+	HKR,    ,"BTQuiesceTimeout", 0x00010001, 1000
 
 [wowl.capabilities.enabled.reg]
         HKR,,   "WakeUpCapabilities", 0x00010001, "0xffffffff"
@@ -400,6 +451,10 @@ CatalogFile     = bcmpciedhd63.cat
 	BCM43XXPCIE_DeviceDesc="Broadcom 802.11ac Network Adapter"
 	BCM43XXPCIE_Service_DispName="Broadcom 802.11ac PCIE Network Adapter Driver"
 
+	BCM43XX_AX_HELP="The Broadcom 802.11ax Network Adapter provides wireless local area networking."
+	BCM43XXPCIE_AX_DeviceDesc="Broadcom 802.11ax Network Adapter"
+	BCM43XXPCIE_AX_Service_DispName="Broadcom 802.11ax PCIE Network Adapter Driver"
+
 	Auto="Auto"
 	AutoShortLong="Auto (Short/Long)"
 	Default="Default"
@@ -455,3 +510,4 @@ CatalogFile     = bcmpciedhd63.cat
 	NSOffload="NS Offload"
 	WiFiRekeyingOffload="WiFi Rekeying Offload"
 	PacketCoalescing="Packet Coalescing"
+	DriverVersion=101.10.603.0

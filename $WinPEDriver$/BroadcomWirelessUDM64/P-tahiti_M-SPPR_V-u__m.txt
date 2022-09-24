@@ -12,7 +12,7 @@
 #
 #
 # <<Broadcom-WL-IPTag/Private1743:>>
-NVRAMRev=$Rev: 821858 $
+NVRAMRev=$Rev: 925247 $
 
 
 sromrev=18
